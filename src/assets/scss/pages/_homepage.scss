@@ -1,0 +1,85 @@
+#home-page{
+    width: 100%;  
+    padding: 50px 80px;
+    .categ-grid{
+        display: grid;
+        grid-template-columns: 19% 19% 19% 19% 19%;
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+    .jokes-grid{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 40px;
+    }
+    
+}
+
+#categ{
+    width: 100%;
+    height: 50px; 
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#joke-card{
+    width: 100%;
+    height: 250px; 
+    border: 1px solid #cfb995;
+}
+
+@media only screen and (max-width: 1000px) {
+    #home-page{ 
+        .categ-grid{ 
+            grid-template-columns: 1fr 1fr 1fr 1fr; 
+        }
+        .jokes-grid{ 
+            grid-template-columns: 1fr 1fr; 
+        }
+        
+        
+    }
+    
+}
+
+@media only screen and (max-width: 850px) {
+    #home-page{ 
+        .categ-grid{ 
+            grid-template-columns: 1fr 1fr 1fr ; 
+        }
+        
+        
+    }
+    
+}
+
+@media only screen and (max-width: 700px) {
+    #home-page{ 
+        .categ-grid{ 
+            grid-template-columns: 1fr 1fr; 
+        }
+        .jokes-grid{ 
+            grid-template-columns: 1fr ; 
+        }
+        
+        
+    }
+    
+}
+
+@media only screen and (max-width: 550px) {
+    #home-page{ 
+        padding: 50px 40px;
+        .categ-grid{ 
+            grid-template-columns: 1fr; 
+        }
+        
+        
+    }
+    
+}
