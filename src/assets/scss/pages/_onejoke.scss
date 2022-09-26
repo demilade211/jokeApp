@@ -1,0 +1,79 @@
+#one-joke{
+    width: 100%; 
+    padding: 50px 90px;
+    display: grid;
+    grid-template-columns: 60% 30%;
+    column-gap: 20px;
+    .left{ 
+        .left-in{
+            border: 1px solid #cccccc; 
+            width: 100%; 
+            padding: 10px;
+            h1{
+                font-family: "Montserratregular";
+                font-size: 48px;
+                color: #cfb995;
+            }
+            p{
+                margin-top: 20px;
+            }
+        }
+        .react-con{
+            margin-top: 20px;
+            display: flex;
+            .like-con{
+                margin-right: 30px;
+                .like{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 100%;
+                    background-color: #009900;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .score{
+                    color: #009900;
+                    margin-left: 10px;
+                    margin-top: 10px;
+                    p{
+                        font-weight: bold;
+                    }
+                }
+            }
+            .dislike-con{
+                .like{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 100%;
+                    background-color: #ff1a1a;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .score{
+                    color: #ff1a1a;
+                    margin-left: 10px;
+                    margin-top: 10px;
+                    p{
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        
+    }
+    .right{ 
+        border: 1px solid #cccccc;
+    }
+}
+@media only screen and (max-width: 850px) {
+    #one-joke{
+        padding: 50px 50px;
+        grid-template-columns: 100%;
+        .right{ 
+            display: none;
+        }
+    }
+    
+}

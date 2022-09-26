@@ -14,6 +14,23 @@
         column-gap: 20px;
         row-gap: 40px;
     }
+    .load-con{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        button{
+            width: 200px;
+            height: 50px;
+            border: 1px solid #cfb995;
+            color: #cfb995;
+            background-color: white;
+            cursor: pointer;
+            img{
+                margin-left: 10px;
+            }
+        }
+    }
     
 }
 
@@ -30,7 +47,30 @@
 #joke-card{
     width: 100%;
     height: 250px; 
-    border: 1px solid #cfb995;
+    border: 1px solid #d9d9d9;
+    padding: 10px;
+    h1{
+        font-size: 18px;
+        img{
+            margin-right: 10px;
+        }
+    }
+    p{
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .btn{
+        text-align: right;
+        margin-top: 105px;
+        cursor: pointer;
+        a{
+            text-decoration: none;
+            color: #cfb995;
+        }
+        img{
+            margin-left: 10px;
+        }
+    }
 }
 
 @media only screen and (max-width: 1000px) {
